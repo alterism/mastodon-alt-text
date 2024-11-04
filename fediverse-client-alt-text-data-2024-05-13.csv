@@ -1,0 +1,267 @@
+client,status_count,descriptions_all_count,descriptions_all_percent,descriptions_some_count,descriptions_some_percent,descriptions_none_count,descriptions_none_percent
+Web,8272,1438,17.38394584,7,0.084622824,6827,82.53143133
+dlvr.it,5806,1,0.017223562,0,0,5805,99.98277644
+Mastodon for Android,1894,270,14.25554382,3,0.158394931,1621,85.58606125
+unknown,1428,366,25.6302521,1,0.070028011,1061,74.29971989
+AboveMaidstoneBot,1339,0,0,0,0,1339,100
+Mastodon for iOS,1052,227,21.57794677,1,0.095057034,824,78.3269962
+Buffer,795,126,15.8490566,1,0.125786164,668,84.02515723
+Indie 102.3 Playlist Bot,571,571,100,0,0,0,0
+Tusky,509,170,33.39882122,6,1.178781925,333,65.42239686
+KUVO Playlist Bot,365,365,100,0,0,0,0
+The Colorado Sound Playlist Bot,361,361,100,0,0,0,0
+Ivory for iOS,356,144,40.4494382,0,0,212,59.5505618
+toot - a Mastodon CLI client,339,4,1.179941003,0,0,335,98.820059
+Blog2Social,288,22,7.638888889,0,0,266,92.36111111
+AboveEDXWbot,284,0,0,0,0,284,100
+traffic_incidents_atx,240,0,0,0,0,240,100
+Fedica,222,45,20.27027027,1,0.45045045,176,79.27927928
+ZohoSocial,210,1,0.476190476,0,0,209,99.52380952
+CheapBotsTootSweet,196,2,1.020408163,0,0,194,98.97959184
+Publer,164,2,1.219512195,0,0,162,98.7804878
+pkmnFrames,163,0,0,0,0,163,100
+IceCubesApp,162,87,53.7037037,0,0,75,46.2962963
+Share on Mastodon,142,85,59.85915493,2,1.408450704,55,38.73239437
+Mona for iPhone,136,41,30.14705882,0,0,95,69.85294118
+Mastodon Share for WordPress,130,1,0.769230769,0,0,129,99.23076923
+Metatext,129,44,34.10852713,0,0,85,65.89147287
+Minimal-ActivityPub_v0.5.5_Python_3.10.6,119,0,0,0,0,119,100
+Typefully,114,0,0,0,0,114,100
+TheMoscowTimesByNB,114,114,100,0,0,0,0
+connection,99,0,0,0,0,99,100
+Megalodon,98,31,31.63265306,1,1.020408163,66,67.34693878
+Ukraine News bot,95,0,0,0,0,95,100
+Ivory for Mac,85,34,40,0,0,51,60
+homey,84,0,0,0,0,84,100
+Letras de Músicas,82,0,0,0,0,82,100
+python bot,82,82,100,0,0,0,0
+Java App Publishing Photos,80,0,0,0,0,80,100
+PMAnythingBot,80,0,0,0,0,80,100
+livelakemichigan,80,80,100,0,0,0,0
+"DaLetra - Lyrics, Music, Videos and much more",80,0,0,0,0,80,100
+"DaLetra - Liedtexte, Musik, Videos und vieles mehr",80,0,0,0,0,80,100
+"DaLetra - Paroles, Musique, Vidéos et bien plus encore",79,0,0,0,0,79,100
+fediverse,78,78,100,0,0,0,0
+"DaLetra - Letras, Música, Vídeos y mucho más",78,0,0,0,0,78,100
+"DaLetra - Testi, Musica, Video e molto altro",78,0,0,0,0,78,100
+Homey,75,0,0,0,0,75,100
+Elk,69,14,20.28985507,0,0,55,79.71014493
+Fedilab,69,31,44.92753623,0,0,38,55.07246377
+NowPlaying4Droid,65,0,0,0,0,65,100
+Toot!,65,9,13.84615385,0,0,56,86.15384615
+Moshidon,63,22,34.92063492,0,0,41,65.07936508
+MissingLettr,57,0,0,0,0,57,100
+Flame Reactor,55,55,100,0,0,0,0
+MicroTrailers,49,0,0,0,0,49,100
+startrekscreens,45,45,100,0,0,0,0
+TheInsiderByNB,44,44,100,0,0,0,0
+PostyBirb,44,9,20.45454545,0,0,35,79.54545455
+Wischewetter,43,0,0,0,0,43,100
+Spoutible,42,0,0,0,0,42,100
+python,42,0,0,0,0,42,100
+My User Count,41,41,100,0,0,0,0
+EveryPkmnCard,41,41,100,0,0,0,0
+purrbot,41,0,0,0,0,41,100
+Pokémon Facts,41,41,100,0,0,0,0
+FS Poster,40,0,0,0,0,40,100
+Rule 34 Bot,40,0,0,0,0,40,100
+Posting the people that do not exist,40,40,100,0,0,0,0
+CapybaraBot,39,0,0,0,0,39,100
+HourlyQuotes,39,0,0,0,0,39,100
+Posting Bot,39,0,0,0,0,39,100
+Bot,38,38,100,0,0,0,0
+Mammoth,38,15,39.47368421,0,0,23,60.52631579
+ICM,36,36,100,0,0,0,0
+Social Champ,35,1,2.857142857,0,0,34,97.14285714
+Tootle for Mastodon,32,0,0,0,0,32,100
+Anthologia Graeca,29,29,100,0,0,0,0
+Weather Records bot,28,0,0,0,0,28,100
+DLPStats,27,0,0,0,0,27,100
+MastoFeed,26,0,0,0,0,26,100
+AirportStatusBot,23,0,0,0,0,23,100
+EchoFeed,23,17,73.91304348,1,4.347826087,5,21.73913043
+Gamernews.it,23,0,0,0,0,23,100
+NoSoloBot,23,23,100,0,0,0,0
+Phanpy,22,14,63.63636364,0,0,8,36.36363636
+Cat Flap,22,0,0,0,0,22,100
+pytooterapp,22,22,100,0,0,0,0
+Bot Posts (testing),21,0,0,0,0,21,100
+aircraft-alerter,20,0,0,0,0,20,100
+HirsutePursuitApp,20,0,0,0,0,20,100
+Astroland Toots,20,0,0,0,0,20,100
+wikiRandomImgs_bot,20,0,0,0,0,20,100
+PilgrimsOnline,19,19,100,0,0,0,0
+Random mars photo,19,19,100,0,0,0,0
+Leeralles.nl,18,0,0,0,0,18,100
+Random Images,18,0,0,0,0,18,100
+rocketalert,15,0,0,0,0,15,100
+Missinglettr-mastodon_social,15,0,0,0,0,15,100
+WDWStats,15,0,0,0,0,15,100
+fsposter,15,0,0,0,0,15,100
+Linky,15,3,20,0,0,12,80
+Mona for Mac,14,9,64.28571429,1,7.142857143,4,28.57142857
+Jetpack,14,0,0,0,0,14,100
+rtoot package,14,14,100,0,0,0,0
+Micro.blog,14,2,14.28571429,0,0,12,85.71428571
+skymast,13,0,0,0,0,13,100
+wikibot,13,0,0,0,0,13,100
+Ni Dios Ni Amo,13,3,23.07692308,0,0,10,76.92307692
+BiteYourConsole,13,0,0,0,0,13,100
+tooot,13,2,15.38461538,0,0,11,84.61538462
+catbot,13,0,0,0,0,13,100
+StorePageTooter,12,12,100,0,0,0,0
+Bots.law,12,12,100,0,0,0,0
+fdpublication,12,0,0,0,0,12,100
+Defend Animals,12,0,0,0,0,12,100
+TARS Notificaciones,12,0,0,0,0,12,100
+GRP Server,11,11,100,0,0,0,0
+Anarchist Art,11,11,100,0,0,0,0
+Météo Orsay,10,0,0,0,0,10,100
+ActivityPub.jl,10,10,100,0,0,0,0
+pagasa_bot,10,0,0,0,0,10,100
+iSoftware Updates,9,0,0,0,0,9,100
+Bohn Temps Hourly Poster,9,9,100,0,0,0,0
+FS Poster - Arezzoinforma,9,0,0,0,0,9,100
+ZohoSocial Stage App,9,0,0,0,0,9,100
+CracktroBotPublisher,9,9,100,0,0,0,0
+seebot-mastodon4j,9,0,0,0,0,9,100
+Grass Posting Bot,9,9,100,0,0,0,0
+Red Dwarf Shuffle,9,0,0,0,0,9,100
+miiketakashibot,9,0,0,0,0,9,100
+BirdBuddy,9,9,100,0,0,0,0
+antitrust_bot,8,8,100,0,0,0,0
+hemelapp,8,0,0,0,0,8,100
+Toot schedule,8,8,100,0,0,0,0
+bot,8,8,100,0,0,0,0
+Sidetoolz,8,1,12.5,0,0,7,87.5
+trunks.social,7,4,57.14285714,0,0,3,42.85714286
+retroVideoGameAdPublisher,7,7,100,0,0,0,0
+WikiUntamedPoster,7,7,100,0,0,0,0
+upcomingtrader blog,7,7,100,0,0,0,0
+Tweepsmap,6,5,83.33333333,0,0,1,16.66666667
+s2coastalbotapp,6,6,100,0,0,0,0
+plane-notify,6,0,0,0,0,6,100
+adani jets bot,6,0,0,0,0,6,100
+BisaBoard,6,0,0,0,0,6,100
+Zapier,5,2,40,0,0,3,60
+The Pink Zune,5,0,0,0,0,5,100
+SocialBu,5,0,0,0,0,5,100
+Postpone.app,5,0,0,0,0,5,100
+LostFilm push,5,0,0,0,0,5,100
+FediPlan,5,5,100,0,0,0,0
+whatscoolwithu,5,5,100,0,0,0,0
+tmh observatory,4,0,0,0,0,4,100
+Buddhist Images,4,4,100,0,0,0,0
+Mixpost,4,0,0,0,0,4,100
+Mona for iPad,4,4,100,0,0,0,0
+GooglyEyesOnMagicCards,4,4,100,0,0,0,0
+LGF Connect,4,4,100,0,0,0,0
+avdelphi,4,4,100,0,0,0,0
+Pinafore,4,2,50,0,0,2,50
+RADAAR,4,2,50,0,0,2,50
+Sengi,4,3,75,0,0,1,25
+Fedistar,4,0,0,0,0,4,100
+Geneee,4,0,0,0,0,4,100
+Fun Random Website,4,4,100,0,0,0,0
+Tuba,4,4,100,0,0,0,0
+motorpuntoes,3,0,0,0,0,3,100
+umapyoi.net,3,0,0,0,0,3,100
+IFTTT,3,0,0,0,0,3,100
+Whalebird,3,1,33.33333333,0,0,2,66.66666667
+Tusky Test,3,3,100,0,0,0,0
+Adven Token,3,0,0,0,0,3,100
+jwz.org,3,3,100,0,0,0,0
+Automatic posting bot,3,0,0,0,0,3,100
+nitter-xposter,3,0,0,0,0,3,100
+storyboardsai_socialmedia,3,0,0,0,0,3,100
+Mastobot,3,3,100,0,0,0,0
+Overpass,3,0,0,0,0,3,100
+Photo Post,3,0,0,0,0,3,100
+new_app,3,3,100,0,0,0,0
+mastodon.social,3,1,33.33333333,0,0,2,66.66666667
+Tokodon,3,0,0,0,0,3,100
+Radaar,3,2,66.66666667,0,0,1,33.33333333
+Mastonaut,3,0,0,0,0,3,100
+mtxvp,2,2,100,0,0,0,0
+Tootle,2,2,100,0,0,0,0
+dazb,2,1,50,0,0,1,50
+GuidaTV,2,0,0,0,0,2,100
+Sync,2,0,0,0,0,2,100
+Upluminate,2,0,0,0,0,2,100
+Tumblr RSS,2,0,0,0,0,2,100
+AmsterdamOpDeKaart-bot,2,2,100,0,0,0,0
+Tusk.Ninja Tools,2,2,100,0,0,0,0
+Wayne's Workshop,2,2,100,0,0,0,0
+SH1TT3R,2,0,0,0,0,2,100
+CountdownBot,2,2,100,0,0,0,0
+VSbot,2,0,0,0,0,2,100
+BirdNet-Pi,2,2,100,0,0,0,0
+curl,2,0,0,0,0,2,100
+commit-art,2,0,0,0,0,2,100
+autopost,2,0,0,0,0,2,100
+Apprise,2,2,100,0,0,0,0
+Lastfm-Blue,2,0,0,0,0,2,100
+The Quick Flash,2,2,100,0,0,0,0
+overheard_convos,2,0,0,0,0,2,100
+Statuzer,2,0,0,0,0,2,100
+Tooty,2,2,100,0,0,0,0
+jobstodey,2,0,0,0,0,2,100
+SubwayTooter,2,0,0,0,0,2,100
+TheDesk(PC),2,2,100,0,0,0,0
+Mafalda Cinquetti,2,2,100,0,0,0,0
+NieuweMobiel,2,0,0,0,0,2,100
+skyfeeder josh412.xyz,2,2,100,0,0,0,0
+stickerist-poster,2,0,0,0,0,2,100
+AutoSocial,2,2,100,0,0,0,0
+PhotosSync,1,0,0,0,0,1,100
+DSP,1,0,0,0,0,1,100
+DeltaChat Bridge,1,0,0,0,0,1,100
+Twidere for Android,1,0,0,0,0,1,100
+ABC Gazetesi,1,0,0,0,0,1,100
+Pogo Fans,1,0,0,0,0,1,100
+Subguide Mastadon,1,0,0,0,0,1,100
+x-poster,1,0,0,0,0,1,100
+Roma,1,0,0,0,0,1,100
+atareao,1,1,100,0,0,0,0
+Hexah Digital,1,0,0,0,0,1,100
+Erik's Weblog,1,0,0,0,0,1,100
+adactio.com,1,1,100,0,0,0,0
+koyu.space,1,1,100,0,0,0,0
+TZN FS Poster,1,0,0,0,0,1,100
+Tusker,1,1,100,0,0,0,0
+Mast,1,0,0,0,0,1,100
+co2ticker,1,1,100,0,0,0,0
+Rodent,1,0,0,0,0,1,100
+Sanweb,1,0,0,0,0,1,100
+pycasso,1,1,100,0,0,0,0
+fsposter a4n,1,0,0,0,0,1,100
+TweeseCake,1,1,100,0,0,0,0
+AutstralianArtGallery_clientcred.secret,1,1,100,0,0,0,0
+tgbot-mastodon-sync,1,0,0,0,0,1,100
+UnitedSpaceCats,1,1,100,0,0,0,0
+Epic News Canada,1,0,0,0,0,1,100
+PixelDroid,1,0,0,0,0,1,100
+AEGIS FS Poster App,1,0,0,0,0,1,100
+Mastoot,1,0,0,0,0,1,100
+Grafa Page Manager,1,1,100,0,0,0,0
+Github Action,1,1,100,0,0,0,0
+Daily Loss Bot,1,0,0,0,0,1,100
+Bridgy,1,0,0,0,0,1,100
+yongchieng,1,0,0,0,0,1,100
+madonctl,1,0,0,0,0,1,100
+Wabi Wabi pictures,1,0,0,0,0,1,100
+Medieval Images,1,1,100,0,0,0,0
+Unsplash Daily Image,1,0,0,0,0,1,100
+VMC_automated,1,0,0,0,0,1,100
+MyGuidedTours,1,1,100,0,0,0,0
+gitlab.com,1,0,0,0,0,1,100
+Gerakies,1,0,0,0,0,1,100
+Birdhouse Update,1,0,0,0,0,1,100
+jazz010live,1,1,100,0,0,0,0
+Elk (canary),1,1,100,0,0,0,0
+SocialHub for iOS,1,0,0,0,0,1,100
+socialbot,1,1,100,0,0,0,0
+PhonocasterMusicShare,1,0,0,0,0,1,100
+openvibe,1,0,0,0,0,1,100
+iflaapp,1,0,0,0,0,1,100
+Today's Dérive app task,1,1,100,0,0,0,0
