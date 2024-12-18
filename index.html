@@ -7506,13 +7506,14 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
+<h1 style="text-align:center">Alterism – Analyzing image description usage in mastodon.social</h1>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5a25b457-59aa-4850-a93b-ba20ed98513a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">¶</a></h1><p>The present report aims at analysing the use of alt text (image description) in social media posts published on the Fediverse instance mastodon.social <sup><a href="https://mastodon.social/about">[4]</a></sup>, on the basis of tthe dataset <cite>mastodon.social alt text use by client app</cite> <sup><a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">[5]</a></sup> by Stefan Bohacek <sup><a href="https://stefanbohacek.com/">[6]</a></sup>, published on Kaggle under the MIT license <sup><a href="https://www.mit.edu/~amini/LICENSE.md">[7]</a></sup>.</p>
+<h1 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">¶</a></h2><p>The present report aims at analysing the use of alt text (image description) in social media posts published on the Fediverse instance mastodon.social <sup><a href="https://mastodon.social/about">[4]</a></sup>, on the basis of tthe dataset <cite>mastodon.social alt text use by client app</cite> <sup><a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">[5]</a></sup> by Stefan Bohacek <sup><a href="https://stefanbohacek.com/">[6]</a></sup>, published on Kaggle under the MIT license <sup><a href="https://www.mit.edu/~amini/LICENSE.md">[7]</a></sup>.</p>
 <p>This project was conceived and carried out by the group “Alterism” <sup><a href="https://github.com/alterism">[3]</a></sup>, formed by Cristal Rivera <sup><a href="https://linkedin.com/in/cristal-rivera-picado/">[1]</a></sup> and Tommaso Marmo <sup><a href="https://tommi.space/">[2]</a></sup>, in the context of the Introduction to Data Science <sup><a href="https://ois2.tlu.ee/tluois/subject/ULP6613-23265">[8]</a></sup> course of the <cite>Artificial Intelligence and Sustainable Societies</cite> master <sup><a href="https://aissprogram.eu">[9]</a></sup>.</p>
 <p>Our research focused on understanding image description usage, analyzing it in detail using data science techniquies, and comparing it with literature concerning related topics.</p>
 </div>
@@ -7525,7 +7526,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Project-Domain">Project Domain<a class="anchor-link" href="#Project-Domain">¶</a></h1><h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">¶</a></h2><ul>
+<h1 id="Project-Domain">Project Domain<a class="anchor-link" href="#Project-Domain">¶</a></h2><h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">¶</a></h3><ul>
 <li><strong>Alt-text</strong>: also known as “image description”, it is a critical accessibility feature, providing written descriptions for visual content (Voykinska et al., 2016). It is important for several reasons, among which the following are the three main ones.<ul>
 <li>Fundamental for users who are blind or visually impaired.</li>
 <li>Central to the concept of Universal Design (Garofolo et al., 2022).</li>
@@ -7538,15 +7539,15 @@ a.anchor-link {
 <li><strong>instance</strong>: also knowns as “node” or “server”, it is one independent and self-governed endpoint inside the Fediverse.</li>
 <li><strong>Mastodon.social</strong>: one of the most popular Fediverse instances, the one under analysis in this project.</li>
 </ul>
-<h2 id="Contextual-information">Contextual information<a class="anchor-link" href="#Contextual-information">¶</a></h2><h3 id="Why-accessibility?">Why accessibility?<a class="anchor-link" href="#Why-accessibility?">¶</a></h3><p>Although often praised in the public opinion, accessibility stays a critical yet thorny and overlooked issue, especially in the context of social media (Brady &amp; Bigham, 2014). As our team is particularly concerned with the topic, we chose to develop our project at the intersection of data science and accessibility in social media.</p>
+<h2 id="Contextual-information">Contextual information<a class="anchor-link" href="#Contextual-information">¶</a></h3><h3 id="Why-accessibility?">Why accessibility?<a class="anchor-link" href="#Why-accessibility?">¶</a></h4><p>Although often praised in the public opinion, accessibility stays a critical yet thorny and overlooked issue, especially in the context of social media (Brady &amp; Bigham, 2014). As our team is particularly concerned with the topic, we chose to develop our project at the intersection of data science and accessibility in social media.</p>
 <p>It is one of our chief intentions to highlight how visually disabled social media users are often being discriminated by abled users, even if unwillingly, because of the absence of image description. Our analysis will expose that the addition of image descriptions to social media posts is a virtuous but rare practice, instead of the norm.</p>
-<h3 id="Why-the-Fediverse?">Why the Fediverse?<a class="anchor-link" href="#Why-the-Fediverse?">¶</a></h3><p>We opted to base our analysis on a Fediverse instance because of a combination of three reasons. Firstly, because the current policies of the most popular social networks make it extremely difficult and costly to access and analyze data accurately (Graham, 2023). Secondly, because decentralized social networks are gaining popularity and adoption, and they pride themselves on being more ethical and <q>human-centric</q> (Zulli et al., 2020). Lastly, but most importantly, because Tommaso is a passionate long-term Fediverse user and instance administrator, and Cristal is very curious about the characteristics and potentiality of this network.</p>
-<h3 id="Why-focusing-on-clients?">Why focusing on clients?<a class="anchor-link" href="#Why-focusing-on-clients?">¶</a></h3><p>Clients are interfaces through which users access social media platforms. The diversity of clients is of paramount importance in Mastodon, given its open and interoperable nature. This allows any client to interact with the software, provided that it adheres to the application programming interface (API) standards.</p>
+<h3 id="Why-the-Fediverse?">Why the Fediverse?<a class="anchor-link" href="#Why-the-Fediverse?">¶</a></h4><p>We opted to base our analysis on a Fediverse instance because of a combination of three reasons. Firstly, because the current policies of the most popular social networks make it extremely difficult and costly to access and analyze data accurately (Graham, 2023). Secondly, because decentralized social networks are gaining popularity and adoption, and they pride themselves on being more ethical and <q>human-centric</q> (Zulli et al., 2020). Lastly, but most importantly, because Tommaso is a passionate long-term Fediverse user and instance administrator, and Cristal is very curious about the characteristics and potentiality of this network.</p>
+<h3 id="Why-focusing-on-clients?">Why focusing on clients?<a class="anchor-link" href="#Why-focusing-on-clients?">¶</a></h4><p>Clients are interfaces through which users access social media platforms. The diversity of clients is of paramount importance in Mastodon, given its open and interoperable nature. This allows any client to interact with the software, provided that it adheres to the application programming interface (API) standards.</p>
 <p>As they are quintessential to the fruition of any content on Mastodon, clients significantly <strong>influence the user experience</strong>, including the process of adding alt text.</p>
 <p>While investigating the specifics of client design is outside the scope of this analysis, we aim to uncover trends, recurrencies, and relevant insights starting from the information available in the dataset. Furthermore, by pinpointing the most popular clients and their features, we are going to observe how clients design and options could incentivize users to write image descriptions.</p>
-<h3 id="Mastodon-users%E2%80%99-information-and-growth">Mastodon users’ information and growth<a class="anchor-link" href="#Mastodon-users%E2%80%99-information-and-growth">¶</a></h3><p>According to Dixon (2023), federated Mastodon servers had over ten million registered users collectively, as of March 2023. Mastodon, which shares similar micro-blogging features with respect to Twitter, gained roughly 500 thousand users within ten days of Elon Musk’s Twitter takeover on October 27th, 2022 (Bin Zia et al., 2023).</p>
+<h3 id="Mastodon-users%E2%80%99-information-and-growth">Mastodon users’ information and growth<a class="anchor-link" href="#Mastodon-users%E2%80%99-information-and-growth">¶</a></h4><p>According to Dixon (2023), federated Mastodon servers had over ten million registered users collectively, as of March 2023. Mastodon, which shares similar micro-blogging features with respect to Twitter, gained roughly 500 thousand users within ten days of Elon Musk’s Twitter takeover on October 27th, 2022 (Bin Zia et al., 2023).</p>
 <p>Since Mastodon is a decentralized software, it is harder to track its users with respect to centralized networks. Nevertheless, community projects similar to the-federation.info<sup><a href="https://the-federation.info/">ref++</a></sup> attempt to keep track of users’ statistics in real time.</p>
-<h1 id="Project-scope-and-objectives">Project scope and objectives<a class="anchor-link" href="#Project-scope-and-objectives">¶</a></h1><p>The main research question of this project is to <strong>analyse alt text usage in Mastodon.social in relation to the clients used to publish posts on the platform</strong>. In particular, we will develop our analysis to address the following:</p>
+<h1 id="Project-scope-and-objectives">Project scope and objectives<a class="anchor-link" href="#Project-scope-and-objectives">¶</a></h2><p>The main research question of this project is to <strong>analyse alt text usage in Mastodon.social in relation to the clients used to publish posts on the platform</strong>. In particular, we will develop our analysis to address the following:</p>
 <ol>
 <li>Global alt text usage within the dataset.</li>
 <li>Pinpointing the most popular clients being used.</li>
@@ -7555,16 +7556,16 @@ a.anchor-link {
 <li>Assessing general inclination to add image descriptions.</li>
 <li>Reflecting on how image descriptions contribute to a more inclusive and welcoming online environment.</li>
 </ol>
-<h1 id="Methods">Methods<a class="anchor-link" href="#Methods">¶</a></h1><p>To analyze the usage of alt text in Mastodon posts across different clients, the following methods and algorithms will be applied:</p>
-<h2 id="Exploratory-Data-Analysis-(EDA)">Exploratory Data Analysis (EDA)<a class="anchor-link" href="#Exploratory-Data-Analysis-(EDA)">¶</a></h2><p>EDA will be essential to explore the data and understand its structure.</p>
-<h3 id="Descriptive-Statistics">Descriptive Statistics<a class="anchor-link" href="#Descriptive-Statistics">¶</a></h3><p>Key statistical measures such as mean, median, standard deviation, and percentiles will be calculated to summarize and understand the distribution of posts in different clients. These metrics will help identify central tendencies and variability in the data, providing insights into patterns and anomalies.</p>
-<h3 id="Visualizations">Visualizations<a class="anchor-link" href="#Visualizations">¶</a></h3><ul>
+<h1 id="Methods">Methods<a class="anchor-link" href="#Methods">¶</a></h2><p>To analyze the usage of alt text in Mastodon posts across different clients, the following methods and algorithms will be applied:</p>
+<h2 id="Exploratory-Data-Analysis-(EDA)">Exploratory Data Analysis (EDA)<a class="anchor-link" href="#Exploratory-Data-Analysis-(EDA)">¶</a></h3><p>EDA will be essential to explore the data and understand its structure.</p>
+<h3 id="Descriptive-Statistics">Descriptive Statistics<a class="anchor-link" href="#Descriptive-Statistics">¶</a></h4><p>Key statistical measures such as mean, median, standard deviation, and percentiles will be calculated to summarize and understand the distribution of posts in different clients. These metrics will help identify central tendencies and variability in the data, providing insights into patterns and anomalies.</p>
+<h3 id="Visualizations">Visualizations<a class="anchor-link" href="#Visualizations">¶</a></h4><ul>
 <li><strong>Bar charts</strong> and <strong>boxplots</strong> will be used to examine the distribution of variables and detect outliers.</li>
 <li><strong>Correlation analysis</strong>: relationships between variables will be explored using both Pearson and Spearman correlation coefficients. For example, correlations between posts (the number of statuses posted) and alt text usage percentage (percentage of posts with image descriptions) will help assess how variables might influence each other.</li>
 <li><strong>Scatter Plots</strong>: relationships between variables such as posts and alt text usage percentage, providing a graphical representation of trends.</li>
 </ul>
 <p>These steps align with Tukey’s (1977) focus on EDA as a fundamental process to understand data before applying advanced techniques.</p>
-<h3 id="Data-Preprocessing-and-Feature-Engineering">Data Preprocessing and Feature Engineering<a class="anchor-link" href="#Data-Preprocessing-and-Feature-Engineering">¶</a></h3><p><strong>Feature transformation</strong>: certain features will be transformed using logarithmic transformations. Logarithmic scale allows the visualization of the broad range of post counts. Transformations will help improve model performance by addressing skewness or heteroscedasticity in the data (Field, 2013).</p>
+<h3 id="Data-Preprocessing-and-Feature-Engineering">Data Preprocessing and Feature Engineering<a class="anchor-link" href="#Data-Preprocessing-and-Feature-Engineering">¶</a></h4><p><strong>Feature transformation</strong>: certain features will be transformed using logarithmic transformations. Logarithmic scale allows the visualization of the broad range of post counts. Transformations will help improve model performance by addressing skewness or heteroscedasticity in the data (Field, 2013).</p>
 </div>
 </div>
 </div>
@@ -7575,7 +7576,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Dataset-structure-and-description">Dataset structure and description<a class="anchor-link" href="#Dataset-structure-and-description">¶</a></h1><ul>
+<h1 id="Dataset-structure-and-description">Dataset structure and description<a class="anchor-link" href="#Dataset-structure-and-description">¶</a></h2><ul>
 <li>The source of the dataset comes from Bohacek (2024), retrieved on Kaggle: <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">mastodon.social alt text use by client app</a>.</li>
 <li>All the posts under analysis come <em>exclusively</em> from the Fediverse instance <a href="https://mastodon.social">mastodon.social</a>.</li>
 </ul>
@@ -7617,7 +7618,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dataset-import-and-preview">Dataset import and preview<a class="anchor-link" href="#Dataset-import-and-preview">¶</a></h2><p>Import and print dataset assigning the variables <code>data</code> and <code>original_data</code>, so that the original dataset can be preserved, while we operate on the <code>data</code> variable.</p>
+<h2 id="Dataset-import-and-preview">Dataset import and preview<a class="anchor-link" href="#Dataset-import-and-preview">¶</a></h3><p>Import and print dataset assigning the variables <code>data</code> and <code>original_data</code>, so that the original dataset can be preserved, while we operate on the <code>data</code> variable.</p>
 </div>
 </div>
 </div>
@@ -7857,7 +7858,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Dataset-dictionary">Dataset dictionary<a class="anchor-link" href="#Dataset-dictionary">¶</a></h2><p>All columns correspond to relevant data, and to achieve this we will be going through each column, one by one, to understand its meaning and rename it in more explicatory name.</p>
+<h2 id="Dataset-dictionary">Dataset dictionary<a class="anchor-link" href="#Dataset-dictionary">¶</a></h3><p>All columns correspond to relevant data, and to achieve this we will be going through each column, one by one, to understand its meaning and rename it in more explicatory name.</p>
 </div>
 </div>
 </div>
@@ -7943,7 +7944,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-analysis-and-results">Data analysis and results<a class="anchor-link" href="#Data-analysis-and-results">¶</a></h1><p>In this section, we undertake a comprehensive exploration of the dataset to uncover patterns, trends, and insights that can inform our understanding of the data and guide subsequent analysis of the mastodon data set. The primary focus is on performing Exploratory Data Analysis (EDA) to assess the dataset's analyis to identify relationships between variables, and detect potential anomalies. By applying statistical techniques and visualizations, we aim to analyze both individual variables and their interactions, uncovering meaningful clusters, trends, and dependencies. This stage also involves identifying feature importance, analyzing variability, and validating insights within the broader context of alt text usage on mastodon contributing to a deeper understanding of its role in promoting accessibility.</p>
+<h1 id="Data-analysis-and-results">Data analysis and results<a class="anchor-link" href="#Data-analysis-and-results">¶</a></h2><p>In this section, we undertake a comprehensive exploration of the dataset to uncover patterns, trends, and insights that can inform our understanding of the data and guide subsequent analysis of the mastodon data set. The primary focus is on performing Exploratory Data Analysis (EDA) to assess the dataset's analyis to identify relationships between variables, and detect potential anomalies. By applying statistical techniques and visualizations, we aim to analyze both individual variables and their interactions, uncovering meaningful clusters, trends, and dependencies. This stage also involves identifying feature importance, analyzing variability, and validating insights within the broader context of alt text usage on mastodon contributing to a deeper understanding of its role in promoting accessibility.</p>
 </div>
 </div>
 </div>
@@ -7990,7 +7991,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Data-exploration">Data exploration<a class="anchor-link" href="#Data-exploration">¶</a></h2><p>All columns represent relevant data. To ensure clarity and usability, we will review each column individually, analyze its meaning, and assign it a more descriptive and explanatory name.</p>
+<h2 id="Data-exploration">Data exploration<a class="anchor-link" href="#Data-exploration">¶</a></h3><p>All columns represent relevant data. To ensure clarity and usability, we will review each column individually, analyze its meaning, and assign it a more descriptive and explanatory name.</p>
 </div>
 </div>
 </div>
@@ -8246,7 +8247,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Refine-the-dataset-for-analysis">Refine the dataset for analysis<a class="anchor-link" href="#Refine-the-dataset-for-analysis">¶</a></h2>
+<h2 id="Refine-the-dataset-for-analysis">Refine the dataset for analysis<a class="anchor-link" href="#Refine-the-dataset-for-analysis">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8377,7 +8378,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Exclude-posts-from-unknown-client(s)">Exclude posts from unknown client(s)<a class="anchor-link" href="#Exclude-posts-from-unknown-client(s)">¶</a></h3><p>Based on our initial observation, we recognize that the third most used client is labelled as “unknown”. Since our project stongly focuses on the impact of specific clients on the use of alt text, <strong>we arbitrarily choose to drop (exclude) from the dataset posts that come from an undefined client</strong>.</p>
+<h3 id="Exclude-posts-from-unknown-client(s)">Exclude posts from unknown client(s)<a class="anchor-link" href="#Exclude-posts-from-unknown-client(s)">¶</a></h4><p>Based on our initial observation, we recognize that the third most used client is labelled as “unknown”. Since our project stongly focuses on the impact of specific clients on the use of alt text, <strong>we arbitrarily choose to drop (exclude) from the dataset posts that come from an undefined client</strong>.</p>
 </div>
 </div>
 </div>
@@ -8402,7 +8403,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Count-total-clients">Count total clients<a class="anchor-link" href="#Count-total-clients">¶</a></h3><p>Since there are no duplicates, we can safely assume that the length of the dataset is equal to the number of clients.</p>
+<h3 id="Count-total-clients">Count total clients<a class="anchor-link" href="#Count-total-clients">¶</a></h4><p>Since there are no duplicates, we can safely assume that the length of the dataset is equal to the number of clients.</p>
 </div>
 </div>
 </div>
@@ -8451,7 +8452,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Checking-values">Checking values<a class="anchor-link" href="#Checking-values">¶</a></h3>
+<h3 id="Checking-values">Checking values<a class="anchor-link" href="#Checking-values">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8542,7 +8543,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Global-analysis">Global analysis<a class="anchor-link" href="#Global-analysis">¶</a></h2><p>In this section, we will begin analyzing the overall use of alt text across all clients, independent of specific client information. This will provide a broader understanding of the general trends and patterns in the use of alt text within the dataset.</p>
+<h2 id="Global-analysis">Global analysis<a class="anchor-link" href="#Global-analysis">¶</a></h3><p>In this section, we will begin analyzing the overall use of alt text across all clients, independent of specific client information. This will provide a broader understanding of the general trends and patterns in the use of alt text within the dataset.</p>
 </div>
 </div>
 </div>
@@ -8676,7 +8677,7 @@ Total number of posts under analysis: 28428
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Analyzing-client-data">Analyzing client data<a class="anchor-link" href="#Analyzing-client-data">¶</a></h3><p>To visualize the distribution of posts across clients, we will plot the data to review potential outliers or skewed distributions. This will help us understand how the total number of posts is spread across each client and identify any patterns or irregularities in the data.</p>
+<h3 id="Analyzing-client-data">Analyzing client data<a class="anchor-link" href="#Analyzing-client-data">¶</a></h4><p>To visualize the distribution of posts across clients, we will plot the data to review potential outliers or skewed distributions. This will help us understand how the total number of posts is spread across each client and identify any patterns or irregularities in the data.</p>
 </div>
 </div>
 </div>
@@ -8843,7 +8844,7 @@ Name: posts, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Correlation-coefficients">Correlation coefficients<a class="anchor-link" href="#Correlation-coefficients">¶</a></h3>
+<h3 id="Correlation-coefficients">Correlation coefficients<a class="anchor-link" href="#Correlation-coefficients">¶</a></h4>
 </div>
 </div>
 </div>
@@ -8992,7 +8993,7 @@ Data Sparsity:</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Find-the-mode-of-posts-per-client">Find the mode of posts per client<a class="anchor-link" href="#Find-the-mode-of-posts-per-client">¶</a></h3><p>As the graph above shows, most of the clients have one post. Therefore, <strong>the most frequent total number of posts clients have</strong>, the mode, should be equal to one.</p>
+<h3 id="Find-the-mode-of-posts-per-client">Find the mode of posts per client<a class="anchor-link" href="#Find-the-mode-of-posts-per-client">¶</a></h4><p>As the graph above shows, most of the clients have one post. Therefore, <strong>the most frequent total number of posts clients have</strong>, the mode, should be equal to one.</p>
 </div>
 </div>
 </div>
@@ -9031,7 +9032,7 @@ Data Sparsity:</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Grouping-by-client-popularity">Grouping by client popularity<a class="anchor-link" href="#Grouping-by-client-popularity">¶</a></h2><p>The results of the observations on the most and least popular clients brought us to divide the analysis in two groups, and explore the use of alt text separately.</p>
+<h2 id="Grouping-by-client-popularity">Grouping by client popularity<a class="anchor-link" href="#Grouping-by-client-popularity">¶</a></h3><p>The results of the observations on the most and least popular clients brought us to divide the analysis in two groups, and explore the use of alt text separately.</p>
 </div>
 </div>
 </div>
@@ -9160,7 +9161,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Client-specific-alt-text-analysis">Client-specific alt text analysis<a class="anchor-link" href="#Client-specific-alt-text-analysis">¶</a></h2>
+<h2 id="Client-specific-alt-text-analysis">Client-specific alt text analysis<a class="anchor-link" href="#Client-specific-alt-text-analysis">¶</a></h3>
 </div>
 </div>
 </div>
@@ -9296,7 +9297,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Alt-text-usage-in-top-5-clients">Alt text usage in top 5 clients<a class="anchor-link" href="#Alt-text-usage-in-top-5-clients">¶</a></h3><p>In the dataset, only five clients generated more than 1000 posts, accounting for more than 60% of the total posts. Hence, we will be investingating the specific posts more in detail.</p>
+<h3 id="Alt-text-usage-in-top-5-clients">Alt text usage in top 5 clients<a class="anchor-link" href="#Alt-text-usage-in-top-5-clients">¶</a></h4><p>In the dataset, only five clients generated more than 1000 posts, accounting for more than 60% of the total posts. Hence, we will be investingating the specific posts more in detail.</p>
 </div>
 </div>
 </div>
@@ -9497,7 +9498,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exploring-alt-text-features-of-the-top-5-clients">Exploring alt text features of the top 5 clients<a class="anchor-link" href="#Exploring-alt-text-features-of-the-top-5-clients">¶</a></h2><h3 id="Web">Web<a class="anchor-link" href="#Web">¶</a></h3><p>Following what is brought to light by figure 6, we will now focus more in detail on the characteristics of the most popular clients for what concerns image description.</p>
+<h2 id="Exploring-alt-text-features-of-the-top-5-clients">Exploring alt text features of the top 5 clients<a class="anchor-link" href="#Exploring-alt-text-features-of-the-top-5-clients">¶</a></h3><h3 id="Web">Web<a class="anchor-link" href="#Web">¶</a></h4><p>Following what is brought to light by figure 6, we will now focus more in detail on the characteristics of the most popular clients for what concerns image description.</p>
 <p>The most popular client is “Web”, the Web interface integrated in Mastodon’s source code <sup><a href="https://github.com/mastodon/mastodon/">[10]</a></sup> by default. It is what users access to by accessing the URL of their instance. Being accessible via browser, instances administrators can change the user interface to encourage alt text usage, for example by adding CSS snippets <sup><a href="https://multiline.co/mment/2022/12/alt-text-mastodon-css/">[11]</a></sup>. The administrators of mastodon.social do not seem to have adopted any practice to encourage alt text in addition to the default Web interface settings.</p>
 <p>It is possible to enable a warning notification before posting an image without any description from the Web interface, but only in Mastodon Glitch Edition, an experimental fork of Mastodon, with more features (image 2).</p>
 <figure>
@@ -9509,7 +9510,7 @@ Around 65% of the posts come from the top 2% of the clients.
 <img alt="Web confirmation dialog for sharing a post without alt text" src="./images/mastodon-web-confirmation-dialog-repost.png">
 <figcaption>Image 3</figcaption>
 </figure>
-<h3 id="Official-Mastodon-apps">Official Mastodon apps<a class="anchor-link" href="#Official-Mastodon-apps">¶</a></h3><p>The third and fifth most popular clients are the official Mastodon applications for Android <sup><a href="https://github.com/mastodon/mastodon-android" title="mastodon/mastodon-android repository on GitHub">[13]</a></sup> and for iOS <sup><a href="https://github.com/mastodon/mastodon-ios" title="mastodon/mastodon-ios on GitHub">[14]</a></sup>, respecively. In these cases, too, the default interface does not particularly incentivize the use of alt text by default. Nevertheless, from the applications settings it is possible to enable a notification warning before posting an image without description (opt-in) (images 4 and 5).</p>
+<h3 id="Official-Mastodon-apps">Official Mastodon apps<a class="anchor-link" href="#Official-Mastodon-apps">¶</a></h4><p>The third and fifth most popular clients are the official Mastodon applications for Android <sup><a href="https://github.com/mastodon/mastodon-android" title="mastodon/mastodon-android repository on GitHub">[13]</a></sup> and for iOS <sup><a href="https://github.com/mastodon/mastodon-ios" title="mastodon/mastodon-ios on GitHub">[14]</a></sup>, respecively. In these cases, too, the default interface does not particularly incentivize the use of alt text by default. Nevertheless, from the applications settings it is possible to enable a notification warning before posting an image without description (opt-in) (images 4 and 5).</p>
 <figure>
 <img alt="Android settings in the Mastodon for Android app to enable notifications when posting without alt text" src="./images/mastodon-android-settings.png">
 <figcaption>Image 4</figcaption>
@@ -9518,7 +9519,7 @@ Around 65% of the posts come from the top 2% of the clients.
 <img alt="Notification for posting without alt text on Mastodon on Android" src="./images/mastodon-android-post-warning.png">
 <figcaption>Image 5</figcaption>
 </figure>
-<h3 id="Bots">Bots<a class="anchor-link" href="#Bots">¶</a></h3><p>Lastly, AboveMaidstoneBot and dlvr.it show very peculiar characteristics, strongly suggesting they are both automated software. We were unable to gather any information about the former, and we can only assume that it is probably a bot automating the publishing of some kind of content. The latter, instead, has an informative website <sup><a href="https://dlvr.it">[15]</a></sup> where it appears that it is a software built purposefully to enable cross-posting (the practice of publishing on one social media platform and automatically publishing the same content on another).</p>
+<h3 id="Bots">Bots<a class="anchor-link" href="#Bots">¶</a></h4><p>Lastly, AboveMaidstoneBot and dlvr.it show very peculiar characteristics, strongly suggesting they are both automated software. We were unable to gather any information about the former, and we can only assume that it is probably a bot automating the publishing of some kind of content. The latter, instead, has an informative website <sup><a href="https://dlvr.it">[15]</a></sup> where it appears that it is a software built purposefully to enable cross-posting (the practice of publishing on one social media platform and automatically publishing the same content on another).</p>
 <p>There are two possibilities explaining the lack of image descriptions: either the software does not support the inclusion of alt text, or images originally posted on other platforms almost never have an image description. The second option is the most likely, as only one post out of 5806 has alt text, meaning that the software supported alt text posting at least once.</p>
 </div>
 </div>
@@ -9530,7 +9531,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Note-on-Analytical-Methods">Note on Analytical Methods<a class="anchor-link" href="#Note-on-Analytical-Methods">¶</a></h2><p><strong>Why Linear Regression, Logistic Regression, and KNN were not considered</strong>.</p>
+<h2 id="Note-on-Analytical-Methods">Note on Analytical Methods<a class="anchor-link" href="#Note-on-Analytical-Methods">¶</a></h3><p><strong>Why Linear Regression, Logistic Regression, and KNN were not considered</strong>.</p>
 <p>Several analytical approaches were initially considered to understand patterns in the dataset, including linear regression, logistic regression, and k-nearest neighbors (KNN). However, these methods were not considered for the following reasons:</p>
 <ul>
 <li>Linear Regression: The correlation analysis between the percentage of posts with alt text and the total status count revealed a very weak relationship (Pearson correlation: -0.06, Spearman correlation: 0.03). This indicates a lack of linear association, a prerequisite for linear regression. Applying this method would not yield significant insights or could lead to overfitting (not being able to generalize) or underfitting (trying to build a linear model in nonlinear data).</li>
@@ -9547,11 +9548,11 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Conclusion-and-future-development">Conclusion and future development<a class="anchor-link" href="#Conclusion-and-future-development">¶</a></h1><h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h2><p>In conclusion, the results of our analysis proved to be positive, as alt text usage in the dataset revealed to be strongly greater than in Twitter, but at the same time they are showing a lot of room for improvement for image descriptions in absolute terms, because only a minority of posts in the dataset had them. Furthermore, we found a strong inequality in the distribution of posts among clients, something we were not expecting, that forced us to adapt our approach and the flow of our analysis accordingly.</p>
+<h1 id="Conclusion-and-future-development">Conclusion and future development<a class="anchor-link" href="#Conclusion-and-future-development">¶</a></h2><h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h3><p>In conclusion, the results of our analysis proved to be positive, as alt text usage in the dataset revealed to be strongly greater than in Twitter, but at the same time they are showing a lot of room for improvement for image descriptions in absolute terms, because only a minority of posts in the dataset had them. Furthermore, we found a strong inequality in the distribution of posts among clients, something we were not expecting, that forced us to adapt our approach and the flow of our analysis accordingly.</p>
 <p>Concerning the environment of the Fediverse, even though they supposedly are more sensitive to ethical issues, this analysis showed without any doubt that the use of image descriptions is still too limited.</p>
-<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h2><p>While our initial expectations for the project included applying more advanced technical models, the reality of working with real-world data often brings unforeseen challenges that must first be addressed. During our analysis, we encountered limitations such as the lack of significant features for certain models and the need for extensive data cleaning and restructuring. These challenges highlighted an essential truth: data analysis is often less about immediately implementing complex models and more about solving foundational issues to ensure data quality and reliability.</p>
+<h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3><p>While our initial expectations for the project included applying more advanced technical models, the reality of working with real-world data often brings unforeseen challenges that must first be addressed. During our analysis, we encountered limitations such as the lack of significant features for certain models and the need for extensive data cleaning and restructuring. These challenges highlighted an essential truth: data analysis is often less about immediately implementing complex models and more about solving foundational issues to ensure data quality and reliability.</p>
 <p>Furthermore, our findings align with broader statistics, which indicate that much of the data on accessibility is either incomplete or underutilized. This underscores the pressing need for improved data collection practices and the prioritization of accessibility in digital content creation. By addressing these initial hurdles, future analyses can leverage more robust data to apply sophisticated techniques and generate actionable insights, ultimately contributing to a more inclusive digital landscape.</p>
-<h2 id="Future-development">Future development<a class="anchor-link" href="#Future-development">¶</a></h2><p>We believe that there is a great room for expansion and deepening of this analysis, not merely in terms of development, but chiefly in relation to the expansion of the dataset, in particular:</p>
+<h2 id="Future-development">Future development<a class="anchor-link" href="#Future-development">¶</a></h3><p>We believe that there is a great room for expansion and deepening of this analysis, not merely in terms of development, but chiefly in relation to the expansion of the dataset, in particular:</p>
 <ul>
 <li>by updating the dataset to a more recent date</li>
 <li>by including more posts in the dataset</li>
@@ -9572,7 +9573,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Appendix">Appendix<a class="anchor-link" href="#Appendix">¶</a></h2><p>Figure 9 is the result of an experimental exploratory analysis of applying K-means clustering with scikit.</p>
+<h2 id="Appendix">Appendix<a class="anchor-link" href="#Appendix">¶</a></h3><p>Figure 9 is the result of an experimental exploratory analysis of applying K-means clustering with scikit.</p>
 </div>
 </div>
 </div>
@@ -9742,7 +9743,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="References">References<a class="anchor-link" href="#References">¶</a></h1><p><strong>Dataset</strong>: Bohacek, S. (2024). Mastodon.social alt text use by client app. Kaggle. <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app</a></p>
+<h1 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p><strong>Dataset</strong>: Bohacek, S. (2024). Mastodon.social alt text use by client app. Kaggle. <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app</a></p>
 <ul>
 <li>Bin Zia, H., He, J., Raman, A., Castro, I., Sastry, N. &amp; Tyson, G. (2023). Flocking to Mastodon: Tracking the Great Twitter Migration. <a href="https://doi.org/10.48550/arXiv.2302.14294">https://doi.org/10.48550/arXiv.2302.14294</a></li>
 <li>Brady E. &amp; Bigham, J.P. (2014). How companies engage customers around accessibility on social media. In Proceedings of the 16th international ACM SIGACCESS conference on Computers &amp; accessibility (ASSETS '14). Association for Computing Machinery, New York, NY, USA, 51–58. <a href="https://doi.org/10.1145/2661334.2661355">https://doi.org/10.1145/2661334.2661355</a></li>

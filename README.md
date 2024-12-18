@@ -1,4 +1,4 @@
-<h1 align='center'>Alt text in mastodon.social<h1>
+<h1 align='center'>Analyzing image description usage in mastodon.social<h1>
 
 ## Abstract
 
