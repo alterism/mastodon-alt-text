@@ -1,4 +1,4 @@
-<h1 align='center'>Analyzing image description usage in mastodon.social<h1>
+<h1 align='center'><a href='https://alterism.github.io/mastodon-alt-text/'>Analyzing image description usage in mastodon.social</a><h1>
 
 ## Abstract
 
