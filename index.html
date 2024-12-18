@@ -7513,10 +7513,17 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">¶</a></h2><p>The present report aims at analysing the use of alt text (image description) in social media posts published on the Fediverse instance mastodon.social <sup><a href="https://mastodon.social/about">[4]</a></sup>, on the basis of tthe dataset <cite>mastodon.social alt text use by client app</cite> <sup><a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">[5]</a></sup> by Stefan Bohacek <sup><a href="https://stefanbohacek.com/">[6]</a></sup>, published on Kaggle under the MIT license <sup><a href="https://www.mit.edu/~amini/LICENSE.md">[7]</a></sup>.</p>
+<h2 id="Abstract">Abstract<a class="anchor-link" href="#Abstract">¶</a></h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;"><div>
+<p>The present report aims at analysing the use of alt text (image description) in social media posts published on the Fediverse instance mastodon.social <sup><a href="https://mastodon.social/about">[4]</a></sup>, on the basis of tthe dataset <cite>mastodon.social alt text use by client app</cite> <sup><a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">[5]</a></sup> by Stefan Bohacek <sup><a href="https://stefanbohacek.com/">[6]</a></sup>, published on Kaggle under the MIT license <sup><a href="https://www.mit.edu/~amini/LICENSE.md">[7]</a></sup>.</p>
 <p>This project was conceived and carried out by the group “Alterism” <sup><a href="https://github.com/alterism">[3]</a></sup>, formed by Cristal Rivera <sup><a href="https://linkedin.com/in/cristal-rivera-picado/">[1]</a></sup> and Tommaso Marmo <sup><a href="https://tommi.space/">[2]</a></sup>, in the context of the Introduction to Data Science <sup><a href="https://ois2.tlu.ee/tluois/subject/ULP6613-23265">[8]</a></sup> course of the <cite>Artificial Intelligence and Sustainable Societies</cite> master <sup><a href="https://aissprogram.eu">[9]</a></sup>.</p>
 <p>Our research focused on understanding image description usage, analyzing it in detail using data science techniquies, and comparing it with literature concerning related topics.</p>
 <p><a href="https://github.com/alterism/mastodon-alt-text">The source of the whole project is open</a> and released under the <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share-Alike license</a>.</p>
+</div>
+<figure>
+	<img src="https://avatars.githubusercontent.com/u/187257500" alt="Cristal and Tommi in a photo together">
+</figure>
+</div>
 </div>
 </div>
 </div>
@@ -7527,7 +7534,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Project-Domain">Project Domain<a class="anchor-link" href="#Project-Domain">¶</a></h2><h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">¶</a></h3><ul>
+<h2 id="Project-Domain">Project Domain<a class="anchor-link" href="#Project-Domain">¶</a></h2><h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">¶</a></h3><ul>
 <li><strong>Alt-text</strong>: also known as “image description”, it is a critical accessibility feature, providing written descriptions for visual content (Voykinska et al., 2016). It is important for several reasons, among which the following are the three main ones.<ul>
 <li>Fundamental for users who are blind or visually impaired.</li>
 <li>Central to the concept of Universal Design (Garofolo et al., 2022).</li>
@@ -7548,7 +7555,7 @@ a.anchor-link {
 <p>While investigating the specifics of client design is outside the scope of this analysis, we aim to uncover trends, recurrencies, and relevant insights starting from the information available in the dataset. Furthermore, by pinpointing the most popular clients and their features, we are going to observe how clients design and options could incentivize users to write image descriptions.</p>
 <h3 id="Mastodon-users%E2%80%99-information-and-growth">Mastodon users’ information and growth<a class="anchor-link" href="#Mastodon-users%E2%80%99-information-and-growth">¶</a></h4><p>According to Dixon (2023), federated Mastodon servers had over ten million registered users collectively, as of March 2023. Mastodon, which shares similar micro-blogging features with respect to Twitter, gained roughly 500 thousand users within ten days of Elon Musk’s Twitter takeover on October 27th, 2022 (Bin Zia et al., 2023).</p>
 <p>Since Mastodon is a decentralized software, it is harder to track its users with respect to centralized networks. Nevertheless, community projects similar to the-federation.info<sup><a href="https://the-federation.info/">ref++</a></sup> attempt to keep track of users’ statistics in real time.</p>
-<h1 id="Project-scope-and-objectives">Project scope and objectives<a class="anchor-link" href="#Project-scope-and-objectives">¶</a></h2><p>The main research question of this project is to <strong>analyse alt text usage in Mastodon.social in relation to the clients used to publish posts on the platform</strong>. In particular, we will develop our analysis to address the following:</p>
+<h2 id="Project-scope-and-objectives">Project scope and objectives<a class="anchor-link" href="#Project-scope-and-objectives">¶</a></h2><p>The main research question of this project is to <strong>analyse alt text usage in Mastodon.social in relation to the clients used to publish posts on the platform</strong>. In particular, we will develop our analysis to address the following:</p>
 <ol>
 <li>Global alt text usage within the dataset.</li>
 <li>Pinpointing the most popular clients being used.</li>
@@ -7557,7 +7564,7 @@ a.anchor-link {
 <li>Assessing general inclination to add image descriptions.</li>
 <li>Reflecting on how image descriptions contribute to a more inclusive and welcoming online environment.</li>
 </ol>
-<h1 id="Methods">Methods<a class="anchor-link" href="#Methods">¶</a></h2><p>To analyze the usage of alt text in Mastodon posts across different clients, the following methods and algorithms will be applied:</p>
+<h2 id="Methods">Methods<a class="anchor-link" href="#Methods">¶</a></h2><p>To analyze the usage of alt text in Mastodon posts across different clients, the following methods and algorithms will be applied:</p>
 <h2 id="Exploratory-Data-Analysis-(EDA)">Exploratory Data Analysis (EDA)<a class="anchor-link" href="#Exploratory-Data-Analysis-(EDA)">¶</a></h3><p>EDA will be essential to explore the data and understand its structure.</p>
 <h3 id="Descriptive-Statistics">Descriptive Statistics<a class="anchor-link" href="#Descriptive-Statistics">¶</a></h4><p>Key statistical measures such as mean, median, standard deviation, and percentiles will be calculated to summarize and understand the distribution of posts in different clients. These metrics will help identify central tendencies and variability in the data, providing insights into patterns and anomalies.</p>
 <h3 id="Visualizations">Visualizations<a class="anchor-link" href="#Visualizations">¶</a></h4><ul>
@@ -7577,7 +7584,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Dataset-structure-and-description">Dataset structure and description<a class="anchor-link" href="#Dataset-structure-and-description">¶</a></h2><ul>
+<h2 id="Dataset-structure-and-description">Dataset structure and description<a class="anchor-link" href="#Dataset-structure-and-description">¶</a></h2><ul>
 <li>The source of the dataset comes from Bohacek (2024), retrieved on Kaggle: <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">mastodon.social alt text use by client app</a>.</li>
 <li>All the posts under analysis come <em>exclusively</em> from the Fediverse instance <a href="https://mastodon.social">mastodon.social</a>.</li>
 </ul>
@@ -7945,7 +7952,7 @@ Data size (rows×columns):	2128
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Data-analysis-and-results">Data analysis and results<a class="anchor-link" href="#Data-analysis-and-results">¶</a></h2><p>In this section, we undertake a comprehensive exploration of the dataset to uncover patterns, trends, and insights that can inform our understanding of the data and guide subsequent analysis of the mastodon data set. The primary focus is on performing Exploratory Data Analysis (EDA) to assess the dataset's analyis to identify relationships between variables, and detect potential anomalies. By applying statistical techniques and visualizations, we aim to analyze both individual variables and their interactions, uncovering meaningful clusters, trends, and dependencies. This stage also involves identifying feature importance, analyzing variability, and validating insights within the broader context of alt text usage on mastodon contributing to a deeper understanding of its role in promoting accessibility.</p>
+<h2 id="Data-analysis-and-results">Data analysis and results<a class="anchor-link" href="#Data-analysis-and-results">¶</a></h2><p>In this section, we undertake a comprehensive exploration of the dataset to uncover patterns, trends, and insights that can inform our understanding of the data and guide subsequent analysis of the mastodon data set. The primary focus is on performing Exploratory Data Analysis (EDA) to assess the dataset's analyis to identify relationships between variables, and detect potential anomalies. By applying statistical techniques and visualizations, we aim to analyze both individual variables and their interactions, uncovering meaningful clusters, trends, and dependencies. This stage also involves identifying feature importance, analyzing variability, and validating insights within the broader context of alt text usage on mastodon contributing to a deeper understanding of its role in promoting accessibility.</p>
 </div>
 </div>
 </div>
@@ -9549,7 +9556,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Conclusion-and-future-development">Conclusion and future development<a class="anchor-link" href="#Conclusion-and-future-development">¶</a></h2><h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h3><p>In conclusion, the results of our analysis proved to be positive, as alt text usage in the dataset revealed to be strongly greater than in Twitter, but at the same time they are showing a lot of room for improvement for image descriptions in absolute terms, because only a minority of posts in the dataset had them. Furthermore, we found a strong inequality in the distribution of posts among clients, something we were not expecting, that forced us to adapt our approach and the flow of our analysis accordingly.</p>
+<h2 id="Conclusion-and-future-development">Conclusion and future development<a class="anchor-link" href="#Conclusion-and-future-development">¶</a></h2><h2 id="Summary">Summary<a class="anchor-link" href="#Summary">¶</a></h3><p>In conclusion, the results of our analysis proved to be positive, as alt text usage in the dataset revealed to be strongly greater than in Twitter, but at the same time they are showing a lot of room for improvement for image descriptions in absolute terms, because only a minority of posts in the dataset had them. Furthermore, we found a strong inequality in the distribution of posts among clients, something we were not expecting, that forced us to adapt our approach and the flow of our analysis accordingly.</p>
 <p>Concerning the environment of the Fediverse, even though they supposedly are more sensitive to ethical issues, this analysis showed without any doubt that the use of image descriptions is still too limited.</p>
 <h2 id="Challenges">Challenges<a class="anchor-link" href="#Challenges">¶</a></h3><p>While our initial expectations for the project included applying more advanced technical models, the reality of working with real-world data often brings unforeseen challenges that must first be addressed. During our analysis, we encountered limitations such as the lack of significant features for certain models and the need for extensive data cleaning and restructuring. These challenges highlighted an essential truth: data analysis is often less about immediately implementing complex models and more about solving foundational issues to ensure data quality and reliability.</p>
 <p>Furthermore, our findings align with broader statistics, which indicate that much of the data on accessibility is either incomplete or underutilized. This underscores the pressing need for improved data collection practices and the prioritization of accessibility in digital content creation. By addressing these initial hurdles, future analyses can leverage more robust data to apply sophisticated techniques and generate actionable insights, ultimately contributing to a more inclusive digital landscape.</p>
@@ -9744,7 +9751,7 @@ Around 65% of the posts come from the top 2% of the clients.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p><strong>Dataset</strong>: Bohacek, S. (2024). Mastodon.social alt text use by client app. Kaggle. <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app</a></p>
+<h2 id="References">References<a class="anchor-link" href="#References">¶</a></h2><p><strong>Dataset</strong>: Bohacek, S. (2024). Mastodon.social alt text use by client app. Kaggle. <a href="https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app">https://www.kaggle.com/datasets/fourtonfish/mastodon-social-alt-text-use-by-client-app</a></p>
 <ul>
 <li>Bin Zia, H., He, J., Raman, A., Castro, I., Sastry, N. &amp; Tyson, G. (2023). Flocking to Mastodon: Tracking the Great Twitter Migration. <a href="https://doi.org/10.48550/arXiv.2302.14294">https://doi.org/10.48550/arXiv.2302.14294</a></li>
 <li>Brady E. &amp; Bigham, J.P. (2014). How companies engage customers around accessibility on social media. In Proceedings of the 16th international ACM SIGACCESS conference on Computers &amp; accessibility (ASSETS '14). Association for Computing Machinery, New York, NY, USA, 51–58. <a href="https://doi.org/10.1145/2661334.2661355">https://doi.org/10.1145/2661334.2661355</a></li>
